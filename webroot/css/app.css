@@ -1,0 +1,26 @@
+.empleado.index.content {
+    width: 100%; /* Aseguramos que ocupe el ancho disponible */
+    overflow-x: visible; /* Permitir que el contenido sea visible sin recortes ni scroll */
+}
+
+.table-responsive {
+    width: auto; /* Permitir que la tabla sea tan ancha como necesite */
+    overflow-x: visible; /* Evitar que se recorte con scroll horizontal */
+}
+
+.wide-table {
+    width: 100%; /* Ocupar el 100% del contenedor */
+    table-layout: auto; /* Permitir que las columnas se ajusten automáticamente */
+}
+
+.wide-table th, .wide-table td {
+    white-space: nowrap; /* Evitar saltos de línea en las celdas */
+    overflow: visible; /* Asegurar que el contenido visible no se oculte */
+    /* No usar text-overflow: ellipsis para evitar puntos suspensivos */
+    padding: 10px; /* Añadir espacio en las celdas */
+}
+
+.wide-table th {
+    width: auto; /* Ajustar el ancho del encabezado */
+    white-space: pre-wrap;
+}
